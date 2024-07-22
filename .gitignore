@@ -1,0 +1,49 @@
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Environment files
+.env
+.flaskenv
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+env/
+*.egg-info/
+*.eggs/
+build/
+dist/
+
+# Database
+*.sqlite3
+*.db
+
+# Flask instance folder
+instance/
+
+# Logs
+*.log
+
+# Configuration files
+config.ini
+*.cfg
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Docker
+*.dockerignore
+Dockerfile
+docker-compose.yml
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
