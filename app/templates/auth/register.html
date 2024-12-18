@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <h1>Register User</h1>
+    <form method="POST" action="{{ url_for('auth.register', role=role) }}">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.firstname.label }}<br>
+            {{ form.firstname(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.lastname.label }}<br>
+            {{ form.lastname(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.email.label }}<br>
+            {{ form.email(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.phone.label }}<br>
+            {{ form.phone(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.username.label }}<br>
+            {{ form.username(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.password.label }}<br>
+            {{ form.password(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </form>
+</div>
+{% endblock %}
